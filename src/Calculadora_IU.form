@@ -36,7 +36,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="btnsuma" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="320" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnrestar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnmultiplicar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btndividir" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="33" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -63,8 +69,13 @@
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="btnsuma" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnsuma" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnrestar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnmultiplicar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btndividir" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -93,6 +104,24 @@
           <Color blue="99" green="0" red="99" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="SUMA"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsumaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnrestar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="RESTAR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmultiplicar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MULTIPLICAR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btndividir">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DIVIDIR"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -31,6 +34,9 @@ public class Calculadora_IU extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnsuma = new javax.swing.JButton();
+        btnrestar = new javax.swing.JButton();
+        btnmultiplicar = new javax.swing.JButton();
+        btndividir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 102));
@@ -42,6 +48,17 @@ public class Calculadora_IU extends javax.swing.JFrame {
         btnsuma.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnsuma.setForeground(new java.awt.Color(153, 0, 153));
         btnsuma.setText("SUMA");
+        btnsuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsumaActionPerformed(evt);
+            }
+        });
+
+        btnrestar.setText("RESTAR");
+
+        btnmultiplicar.setText("MULTIPLICAR");
+
+        btndividir.setText("DIVIDIR");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -56,7 +73,13 @@ public class Calculadora_IU extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnsuma)
-                        .addContainerGap(320, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(btnrestar)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnmultiplicar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btndividir)
+                        .addContainerGap(33, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtnro2)
@@ -75,12 +98,26 @@ public class Calculadora_IU extends javax.swing.JFrame {
                     .addComponent(txtnro2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(32, 32, 32)
-                .addComponent(btnsuma)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnsuma)
+                    .addComponent(btnrestar)
+                    .addComponent(btnmultiplicar)
+                    .addComponent(btndividir))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnsumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsumaActionPerformed
+        // TODO add your handling code here:
+        double nro1=Double.parseDouble(txtnro1.getText());
+        double nro2=Double.parseDouble(txtnro2.getText());
+        
+        double sumar= nro1+nro2;
+        JOptionPane.showMessageDialog(this,"la suma es :" + sumar);
+       
+    }//GEN-LAST:event_btnsumaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,6 +155,9 @@ public class Calculadora_IU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btndividir;
+    private javax.swing.JButton btnmultiplicar;
+    private javax.swing.JButton btnrestar;
     private javax.swing.JButton btnsuma;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
