@@ -154,11 +154,11 @@ public class Calculadora_IU extends javax.swing.JFrame {
 
     private void btndividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndividirActionPerformed
         // TODO add your handling code here:
-//         double nro1=Double.parseDouble(txtnro1.getText());
-//        double nro2=Double.parseDouble(txtnro2.getText());
-//        
-//        double divicion= nro1/nro2;
-//        JOptionPane.showMessageDialog(this,"la suma es :" + divicion);
+         double nro1=Double.parseDouble(txtnro1.getText());
+        double nro2=Double.parseDouble(txtnro2.getText());
+        
+        double divicion= nro1/nro2;
+        JOptionPane.showMessageDialog(this,"la suma es :" + divicion);
     }//GEN-LAST:event_btndividirActionPerformed
 
     /**
