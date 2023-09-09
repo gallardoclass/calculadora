@@ -62,8 +62,18 @@ public class Calculadora_IU extends javax.swing.JFrame {
         });
 
         btnmultiplicar.setText("MULTIPLICAR");
+        btnmultiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnmultiplicarActionPerformed(evt);
+            }
+        });
 
         btndividir.setText("DIVIDIR");
+        btndividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndividirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,6 +142,24 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double restar= nro1+nro2;
         JOptionPane.showMessageDialog(this,"la suma es :" + restar);
     }//GEN-LAST:event_btnrestarActionPerformed
+
+    private void btnmultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmultiplicarActionPerformed
+        // TODO add your handling code here:
+         double nro1=Double.parseDouble(txtnro1.getText());
+        double nro2=Double.parseDouble(txtnro2.getText());
+        
+        double multiplicar= nro1*nro2;
+        JOptionPane.showMessageDialog(this,"la suma es :" + multiplicar);
+    }//GEN-LAST:event_btnmultiplicarActionPerformed
+
+    private void btndividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndividirActionPerformed
+        // TODO add your handling code here:
+//         double nro1=Double.parseDouble(txtnro1.getText());
+//        double nro2=Double.parseDouble(txtnro2.getText());
+//        
+//        double divicion= nro1/nro2;
+//        JOptionPane.showMessageDialog(this,"la suma es :" + divicion);
+    }//GEN-LAST:event_btndividirActionPerformed
 
     /**
      * @param args the command line arguments

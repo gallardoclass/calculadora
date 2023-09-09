@@ -121,11 +121,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="MULTIPLICAR"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmultiplicarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btndividir">
       <Properties>
         <Property name="text" type="java.lang.String" value="DIVIDIR"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndividirActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
